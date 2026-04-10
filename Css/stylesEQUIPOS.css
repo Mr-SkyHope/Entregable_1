@@ -97,8 +97,8 @@ header {
 
 .ContenedorIntegrantes {
   display: flex;
-  flex-direction: row; /* 🔥 en horizontal */
-  column-gap: 10px; /* espacio entre integrantes */
+  flex-direction: row; 
+  column-gap: 10px; 
   overflow-x: auto;
 }
 
