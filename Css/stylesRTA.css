@@ -207,7 +207,7 @@ header {
   .MainResultados {
     padding: 60px;
     max-width: 1200px;
-    margin: 0 auto; /* centra el contenido */
+    margin: 0 auto;
   }
 
 
@@ -230,7 +230,7 @@ header {
   }
 
   .SeccionProyectos {
-    grid-template-columns: repeat(2, 1fr); /* 🔥 2 columnas */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .SeccionResultados {
