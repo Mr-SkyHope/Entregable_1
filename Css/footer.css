@@ -1,0 +1,152 @@
+
+.Contactos {
+   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1e1e1e; /* 🔥 elegante */
+  color: #ffffff;
+}
+
+.FooterSeccion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterSeccion h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f5a623; /* 🔥 color llamativo elegante */
+}
+
+
+.FooterSeccion p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.Contactos form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+form button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #f5a623;
+  color: black;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.RedesLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.RedesLinks a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.ContenedorFormulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 10px;
+  justify-content: center;
+}
+.ContenedorInformacion {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Titulo {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.SubTitulo {
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contactos p {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContenedorRedesSociales {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  gap: 15px;
+}
+
+#YouTube {
+  font-size: 20px;
+  color: orange;
+}
+#Facebook {
+  font-size: 20px;
+  color: orange;
+}
+#Instagram {
+  font-size: 20px;
+  color: orange;
+}
+
+.ContenedorRedesSociales a {
+  text-decoration: none;
+}
+
+.ContenedorRedesSociales a:hover {
+  color: red;
+}
+
+@media(min-width: 1150px){
+.Contactos {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 40px 80px;
+  }
+
+  .ContenedorFormulario,
+  .ContenedorInformacion,
+  .ContenedorRedesSociales {
+    width: 30%; 
+  }
+
+}

@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Cuerpo que contiene a header y Main*/
+main {
+  background-color: lightgreen;
+}
+/*Header que contiene NavBar*/
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.navbarPrincipal {
+  width: 100%;
+  background: white !important;
+}
+.LogoSemillero {
+  width: 60vw;
+  height: 20vh;
+  background-image: url(../img/logosemillero.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.container-fluid {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between !important;
+  font-size: 8px;
+  font-family: "Times New Roman", Times, serif;
+  flex-direction: row !important;
+  background-color: white !important;
+}
+
+.navbar-nav a {
+  font-weight: bold;
+  color: darkgreen;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-nav a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+.navbar-nav a:hover {
+  color: red;
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+
+
+/*Main - SeccionRH*/
+.SeccionRH {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "titulo"
+    "imagen"
+    "texto";
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border: solid 1px darkgreen;
+}
+
+.ContenedorTitulo {
+  grid-area: titulo;
+  background-color: yellow;
+  border: 5px solid darkgreen;
+  text-align: center;
+}
+
+.ContenedorReseñaHistorica {
+  grid-area: texto;
+  border: 10px solid purple;
+  background-color: yellow;
+
+  overflow: auto;
+  border: 5px solid darkgreen;
+  background-color: gray;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContenedorReseñaHistorica p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.ContenedorImagen img {
+  grid-area: imagen;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ 
+}
+
+/*Main - SeccionMVO*/
+.SeccionMVO {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: white;
+  border: solid 5px yellow;
+}
+.ArticuloContenedor {
+  width: 100%;
+  height: 100%;
+  background-color: darkgreen;
+  color: white;
+}
+.TextoContenedor {
+  height: 75%;
+  width: 100%;
+  background-color: lightslategrey;
+  color: black;
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Main - SeccionLineasInvest*/
+
+.SeccionLineasInvest {
+  
+  background-color: lightgreen;
+  border: 5px solid red;
+  width: 100vw;
+  height: 40vh;
+}
+
+.carousel-item img {
+  height: 207px;
+  object-fit: cover;
+}
+.carousel-caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  color: yellow;
+  font-size: 20px;
+}
+
+.carousel-caption p{
+  font-size: 15px;
+}
+
+.ContenedorRedesSociales a {
+  text-decoration: none;
+}
+
+.ContenedorRedesSociales a:hover {
+  color: red;
+}
+
+.logoU {
+  grid-area: LogoTucan;
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/logosemillero.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+}
+
+.ContenedorInformacion {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.Titulo {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.SubTitulo {
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1150px) {
+
+   .navbarPrincipal {
+    width: 100%;
+    background: white !important;
+  }
+
+  .navbar-nav a {
+    
+    color: darkgreen;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+  }
+  .navbar-nav a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+  }
+  .navbar-nav a:hover::after {
+    width: 100%;
+  }
+  .navbar-nav a:hover {
+    color: red;
+  }
+
+  .container-fluid {
+    background-color: white;
+    
+  }
+  /*MAIN - SECCIONRH*/
+  .SeccionRH {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "titulo imagen"
+      "texto imagen";
+    width: 100%;
+    height: 500px; 
+    gap: 10px;
+    background-color: lightgreen;
+    border: solid 5px darkgreen;
+  }
+
+  .ContenedorTitulo {
+    grid-area: titulo;
+    background-color: yellow;
+    border: 5px solid darkgreen;
+    text-align: center;
+  }
+
+  .ContenedorReseñaHistorica {
+    grid-area: texto;
+    overflow: auto;
+    background-color: gainsboro;
+    border: 5px solid darkgreen;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ContenedorReseñaHistorica p {
+    text-align: justify;
+    font-size: 25px;
+    
+  }
+
+  .ContenedorImagen {
+    grid-area: imagen;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*MAIN - SECCIONMVO*/
+.SeccionMVO {
+  justify-content: space-between;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: solid 5px yellow;
+  gap: 10px;
+  padding: 10px;
+}
+.ArticuloContenedor {
+  width: 100%;
+  height: 100%;
+  background-color: darkgreen;
+}
+.TextoContenedor {
+  height: 75%;
+  width: 100%;
+  background-color: gray;
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.TextoContenedor p{
+  font-size: 35px;
+}
+
+/*MAIN - CARRUSEL*/
+
+.SeccionLineasInvest {
+  border: 5px red solid;
+  background-color: darkgreen;
+  width: 100vw;
+  height: 70vh;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  color: yellow;
+  font-size: 40px;
+}
+
+.carousel-caption p{
+  font-size: 35px;
+}
+
+/*FOOTER*/
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .LogoSemillero {
+    width: 45vw;
+    height: 18vh;
+  }
+
+  
+  .navbar-nav {
+    gap: 35px;
+    font-size: 16px;
+  }
+
+  .navbar-nav a {
+    font-size: 22px;
+  }
+
+  
+  main {
+    gap: 15px;
+  }
+
+  .SeccionRH {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "titulo imagen"
+      "texto imagen";
+    height: 420px;
+    gap: 15px;
+  }
+
+  .ContenedorTitulo {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .ContenedorReseñaHistorica {
+    padding: 10px;
+  }
+
+  .ContenedorReseñaHistorica p {
+    font-size: 18px;
+  }
+
+  .ContenedorImagen img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  .SeccionMVO {
+    flex-direction: row;
+    height: 45vh;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .SeccionMVO .ArticuloContenedor {
+    height: 100%;
+  }
+
+  .TextoContenedor {
+    height: 100%;
+    padding: 15px;
+  }
+
+  .TextoContenedor p {
+    font-size: 20px;
+  }
+
+  
+  .SeccionLineasInvest {
+    height: 60vh;
+  }
+
+  
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 28px;
+  }
+
+  .carousel-caption p {
+    font-size: 20px;
+  }
+
+}

@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarPrincipal {
+  width: 100%;
+  background: white !important;
+}
+
+.LogoSemillero {
+  border: none;
+  width: 60vw;
+  height: 20vh;
+  background-image: url(../img/logosemillero.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.container-fluid {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid darkgreen;
+}
+
+.navbar-nav {
+  
+  display: flex;
+  gap: 25px;
+  justify-content: space-between !important;
+  font-size: 7px;
+  font-family: "Times New Roman", Times, serif;
+  flex-direction: row !important;
+  background-color: white !important;
+}
+
+.navbar-nav a {
+  font-weight: bold;
+  color: darkgreen;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+.navbar-nav a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+.navbar-nav a:hover {
+  color: red;
+}
+
+
+
+.navbar-nav {
+  background-color: white;
+}
+
+.ContenedorEquipo {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: lightgray;
+  border: 5px solid darkgray;
+}
+
+.ContenedorIntegrantes {
+  display: flex;
+  flex-direction: row; /* 🔥 en horizontal */
+  column-gap: 10px; /* espacio entre integrantes */
+  overflow-x: auto;
+}
+
+.FotodelEquipo {
+  background-color: gray;
+  border: 5px solid darkgreen;
+  width: 100%;
+  height: 30vh;
+}
+
+.FotoIntegrante {
+  background-color: green;
+  border: 10px solid yellow;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px gray;
+}
+
+
+
+@media (min-width: 1150px) {
+  .ContenedorEquipo {
+    flex-direction: row;
+    height: 30vh;
+    width: 100%;
+    font-size: 30px;
+  }
+  .FotodelEquipo {
+    width: 30%;
+    height: 100%;
+  }
+  .ContenedorIntegrantes {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    min-height: 100vh;
+    grid-template-areas: "Ladoizq Ladoder";
+  }
+
+  .contenidoIzquierdo {
+    grid-area: Ladoizq;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LogoSemillero {
+    display: none;
+  }
+
+  .ContenidoDerecho {
+    grid-area: Ladoder;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .LogoU {
+    position: sticky;
+    transform: translateY(-50%);
+    background-image: url("../img/logosemillero.PNG");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 27em;
+    height: 15em;
+    border: none;
+  }
+
+  .container-fluid {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    
+    display: flex;
+    gap: 40px;
+    justify-content: space-between !important;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    flex-direction: row !important;
+    background-color: white !important;
+  }
+
+  .navbarPrincipal {
+    width: 100%;
+    background: white !important;
+  }
+
+  .navbar-nav a {
+    
+    color: darkgreen;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+  }
+  .navbar-nav a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+  }
+  .navbar-nav a:hover::after {
+    width: 100%;
+  }
+  .navbar-nav a:hover {
+    color: red;
+  }
+
+  .container-fluid {
+    background-color: white;
+    
+  }
+
+
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  header {
+    background-color: white;
+  }
+
+  .navbarPrincipal {
+    border-bottom: solid 5px darkgreen;
+    background: lightgray !important;
+  }
+
+  .navbar-nav {
+    gap: 35px;
+    font-size: 18px;
+    background-color: white !important;
+  }
+
+  .navbar-nav a {
+    color: darkgreen;
+    font-size: 20px;
+  }
+
+  .container-fluid {
+    background-color: white;
+  }
+
+  .ContenedorEquipo {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .FotodelEquipo {
+    width: 40%;
+    height: auto;
+  }
+
+  .ContenedorIntegrantes {
+    width: 60%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+
+}
+

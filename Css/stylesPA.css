@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.navbarPrincipal {
+  width: 100%;
+  background: white !important;
+  border-bottom: solid 5px green;
+}
+
+.LogoSemillero {
+  width: 60vw;
+  height: 20vh;
+  background-image: url(../img/logosemillero.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.container-fluid {
+background-color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between !important;
+  font-size: 7px;
+  font-family: "Times New Roman", Times, serif;
+  flex-direction: row !important;
+  background-color: white !important;
+}
+
+.navbar-nav a {
+  font-weight: bold;
+  color: darkgreen;
+  text-decoration: none;
+  position: relative;
+  
+}
+.navbar-nav a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+.navbar-nav a:hover {
+  color: red;
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+
+
+.Overlay {
+  text-align: center;
+}
+
+.SeccionLIBROS,
+.SeccionARTICULOS,
+.SeccionINFORMES {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 15px;
+  width: 100%;
+
+  background-color: lightgray;
+}
+
+.Libro,
+.ART,
+.Infor {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border-left: solid 5px green;
+  box-shadow: 0 4px 12px gray;
+  transition: transform 0.2s ease;
+}
+
+.Libro:hover,
+.ART:hover,
+.Infor:hover {
+  transform: scale(1.03);
+  border-left: solid 5px red;
+}
+
+.SeccionLIBROS img,
+.SeccionARTICULOS img,
+.SeccionINFORMES img {
+  padding: 10px;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+}
+
+
+.logoU {
+  grid-area: LogoTucan;
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/logosemillero.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+}
+
+.ContenedorInformacion {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.Titulo {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  color: darkgreen;
+}
+.SubTitulo {
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  color: darkgreen;
+}
+
+p {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+@media (min-width: 1150px) {
+  .container-fluid {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between !important;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    flex-direction: row !important;
+    background-color: white !important;
+  }
+
+  .navbarPrincipal {
+    border-bottom: solid 5px darkgreen;
+    width: 100%;
+    background: lightgray !important;
+  }
+
+  .navbar-nav a {
+    color: darkgreen;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+  }
+  .navbar-nav a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+  }
+  .navbar-nav a:hover::after {
+    width: 100%;
+  }
+  .navbar-nav a:hover {
+    color: red;
+  }
+
+  .container-fluid {
+    background-color: white;
+  }
+
+  .SeccionLIBROS {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px;
+    width: 100%;
+    background-color: lightgray;
+  }
+
+  .Libro {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .SeccionLIBROS img {
+    width: 60%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* MAIN - SECCIONARTICULOS*/
+
+  .SeccionARTICULOS {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+     background-color: lightgray;
+  }
+
+  .ART {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .SeccionARTICULOS img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* MAIN - SECCIONINFORMES*/
+
+  .SeccionINFORMES {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+     background-color: lightgray;
+  }
+
+  .Infor {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .Infor img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .Overlay {
+    padding: 15px;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .navbar-nav {
+    gap: 35px;
+    font-size: 18px;
+  }
+
+  .navbar-nav a {
+    font-size: 22px;
+  }
+
+  
+
+  .SeccionLIBROS,
+  .SeccionARTICULOS,
+  .SeccionINFORMES {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+  }
+
+  .Libro,
+  .ART,
+  .Infor {
+    border-left: solid 6px darkgreen;
+  }
+
+  .Libro:hover,
+  .ART:hover,
+  .Infor:hover {
+    border-left: solid 6px red;
+  }
+
+  .container-fluid{
+    background-color: white;
+  }
+}

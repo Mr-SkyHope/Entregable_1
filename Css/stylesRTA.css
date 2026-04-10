@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.navbarPrincipal {
+  width: 100%;
+  background: white !important;
+  border-bottom: 3px solid green;
+}
+.LogoSemillero {
+  width: 60vw;
+  height: 20vh;
+  background-image: url(../img/logosemillero.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.container-fluid {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between !important;
+  font-size: 7px;
+  font-family: "Times New Roman", Times, serif;
+  flex-direction: row !important;
+  background-color: white !important;
+}
+
+.navbar-nav a {
+  font-weight: bold;
+  color: darkgreen;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-nav a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+.navbar-nav a:hover {
+  color: red;
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+
+
+.MainResultados {
+  padding: 30px;
+  background-color: lightgray;
+}
+
+.EncabezadoResultados {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.EncabezadoResultados h1 {
+  font-size: 32px;
+  color: darkgreen;
+  margin-bottom: 10px;
+}
+
+.EncabezadoResultados p {
+  color: gray;
+  font-size: 16px;
+}
+
+.SeccionProyectos {
+  margin-bottom: 50px;
+}
+
+.SeccionProyectos h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.SeccionProyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.Proyecto {
+  background: white;
+  border-radius: 12px;
+
+  padding: 20px;
+  border-left: 5px solid green;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Proyecto header h3 {
+  font-size: 18px;
+  color: yellow;
+
+}
+
+.SeccionResultados {
+  margin-top: 40px;
+}
+
+.SeccionResultados h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.SeccionResultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.Resultado {
+  background: white;
+  border-radius: 12px;
+
+  padding: 20px;
+  border-left: 5px solid yellow;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.Resultado h3 {
+  font-size: 16px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.Resultado p {
+  font-size: 14px;
+  color: gray;
+  line-height: 1.5;
+}
+
+
+
+
+@media(min-width: 1150px){
+
+.navbarPrincipal {
+    width: 100%;
+    background: white !important;
+  }
+
+  .navbar-nav a {
+    
+    color: darkgreen;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+  }
+  .navbar-nav a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+  }
+  .navbar-nav a:hover::after {
+    width: 100%;
+  }
+  .navbar-nav a:hover {
+    color: red;
+  }
+
+  .container-fluid {
+    background-color: white;
+    
+  }
+
+  
+
+  .MainResultados {
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto; /* centra el contenido */
+  }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-nav {
+    gap: 30px;
+    font-size: 14px;
+  }
+
+  .navbar-nav a {
+    font-size: 18px;
+  }
+
+  .MainResultados {
+    padding: 40px;
+  }
+
+  .SeccionProyectos {
+    grid-template-columns: repeat(2, 1fr); /* 🔥 2 columnas */
+  }
+
+  .SeccionResultados {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
